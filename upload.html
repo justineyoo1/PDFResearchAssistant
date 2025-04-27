@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload PDF - PDF Research Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="navbar__brand">PDF Research Assistant</span>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload PDF</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload" class="upload-content-area">
+            <div class="content-wrapper">
+                <h1>Upload Your PDF</h1>
+                <div class="upload-wrapper">
+                    <!-- Drop Area -->
+                    <div class="drop-area">
+                        <p>Drop your PDF here</p>
+                        <input type="file" id="file-input" accept="application/pdf" hidden>
+                        <label for="file-input" class="drop-area-label">
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <!-- File Preview Section -->
+                    <div class="file-preview">
+                        <div id="file-preview-container">
+                            <p id="file-name">document.pdf</p> <!-- Replace with file name dynamically -->
+                        </div>
+                        <button class="upload-btn confirm-upload-btn" id="confirm-upload-btn">Confirm Upload</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 PDF Research Assistant · <a href="#about">About</a> · <a href="#contact">Contact</a> · <a href="#terms">Terms
