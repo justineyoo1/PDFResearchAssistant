@@ -27,18 +27,16 @@
                 <h1>Upload Your PDF</h1>
                 <div class="upload-wrapper">
                     <!-- Drop Area -->
-                    <div class="drop-area">
-                        <p>Drop your PDF here</p>
-                        <input type="file" id="file-input" accept="application/pdf" hidden>
-                        <label for="file-input" class="drop-area-label">
-                            <span></span>
-                        </label>
+                    <div class="drop-area" id="drop-area">
+                        <p></p>
+                        <input type="file" id="file-input" accept="application/pdf" style="display:none;">
+                        <button type="button" class="upload-btn" id="click-upload-btn">Click to Upload</button>
                     </div>
 
                     <!-- File Preview Section -->
                     <div class="file-preview">
                         <div id="file-preview-container">
-                            <p id="file-name">document.pdf</p> <!-- Replace with file name dynamically -->
+                            <p id="file-name">No file selected</p>
                         </div>
                         <button class="upload-btn confirm-upload-btn" id="confirm-upload-btn">Confirm Upload</button>
                     </div>
@@ -48,4 +46,10 @@
     </main>
 
     <footer>
-        <p>© 2025 PDF Research Assistant · <a href="#about">About</a> · <a href="#contact">Contact</a> · <a href="#terms">Terms
+        <p>© 2025 PDF Research Assistant · <a href="#about">About</a>
+    </footer>
+
+    <script src="js/particles.js"></script>
+</body>
+
+</html>
