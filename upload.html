@@ -26,20 +26,23 @@
             <div class="content-wrapper">
                 <h1>Upload Your PDF</h1>
                 <div class="upload-wrapper">
-                    <!-- Drop Area -->
-                    <div class="drop-area" id="drop-area">
-                        <p></p>
-                        <input type="file" id="file-input" accept="application/pdf" style="display:none;">
-                        <button type="button" class="upload-btn" id="click-upload-btn">Click to Upload</button>
-                    </div>
-
-                    <!-- File Preview Section -->
-                    <div class="file-preview">
-                        <div id="file-preview-container">
-                            <p id="file-name">No file selected</p>
+                    <form 
+                      action="/upload-endpoint"></form> 
+                        <div class="drop-area" id="drop-area">
+                            <p></p>
+                            <input 
+                              type="file" 
+                              id="file-input" 
+                              name="pdf" 
+                              accept="application/pdf" 
+                              required
+                            >
                         </div>
-                        <button class="upload-btn confirm-upload-btn" id="confirm-upload-btn">Confirm Upload</button>
-                    </div>
+                        <div class="file-preview">
+                            <!-- The file name will be shown by the browser after selection -->
+                        </div>
+                        <button class="upload-btn" type="submit">Upload PDF</button>
+                    </form>
                 </div>
             </div>
         </section>
