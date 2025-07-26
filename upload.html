@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload PDF - PDF Research Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav class="navbar">
+            <span class="navbar__brand">PDF Research Assistant</span>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload PDF</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload" class="upload-content-area">
+            <div class="content-wrapper">
+                <h1>Upload Your PDF</h1>
+                <div class="upload-wrapper">
+                    <form 
+                      action="/upload-endpoint"></form> 
+                        <div class="drop-area" id="drop-area">
+                            <p></p>
+                            <input 
+                              type="file" 
+                              id="file-input" 
+                              name="pdf" 
+                              accept="application/pdf" 
+                              required
+                            >
+                        </div>
+                        <div class="file-preview">
+                        </div>
+                        <button class="upload-btn" onclick="window.location.href='about.html'">Upload PDF</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 PDF Research Assistant · <a href="#about">About</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+
+</html>
