@@ -44,4 +44,26 @@ Thumbs.db
 *.xlsx
 *.xls
 *.csv
-*.log 
+*.log
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Data directories
+data/
+uploads/
+vector_db/
+logs/
+
+# PDF files
+*.pdf
+
+# Model cache
+.cache/
+__pycache__/
+
+# Vector database files
+*.faiss
+*.index 
